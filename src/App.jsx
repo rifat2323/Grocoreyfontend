@@ -1,6 +1,6 @@
 import { useState,lazy,Suspense } from 'react'
 import {ButtonComponent} from './slice-component/component'
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import {BrowserRouter,Routes,Route,Navigate} from 'react-router-dom'
 import './App.css'
 import Navbar from './pages/Navbar'
 import Home from './pages/Home'
@@ -33,7 +33,7 @@ function App() {
        <Home/>
       
       </>}/>
-
+      <Route path='*' element={<Navigate  to='/' />}/>
 
 
       <Route path='/cart' element={<>
