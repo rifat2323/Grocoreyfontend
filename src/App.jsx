@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-     <BrowserRouter basename='https://grocoreyfontend.onrender.com'>
+     <BrowserRouter >
      <Context>
      <Routes>
 
