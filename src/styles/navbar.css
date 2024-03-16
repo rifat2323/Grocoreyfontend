@@ -1,0 +1,70 @@
+
+
+.Navbar{
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    background: blue;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 1%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 999;
+
+    
+}
+.wrapperNavDiv{
+    width: 100%;
+    padding: 0 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.navItem,.cartIcons{
+    color: #181725;
+    transition: 200ms ease-in;
+   
+
+}
+.navItem:hover{
+    color: #43c272;
+}
+/* .navItem p{
+    font-weight: bold;
+} */
+.activeNav{
+    color: #53B175;
+}
+.activeNa p{
+    font-weight: bold;
+}
+.activeNav svg{
+    color: #53B175;
+    fill: #53B175;
+}
+
+.activeCartError{
+   
+   animation: error 10s timing-liner infinite;
+}
+@keyframes error {
+    10%{
+       transform: scale(1.1);
+    }
+    40%{
+        transform: skewX(15px);
+    }
+    60%{
+        transform: skewX(-15px);
+    }
+    80%{
+        color: rgb(235, 134, 19);
+    }
+    100%{
+        transform: scale(1);
+        transform: skewX(0);
+        color: #181725;
+    }
+    
+}

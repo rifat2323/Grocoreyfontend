@@ -1,0 +1,52 @@
+.Explore{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2% 5%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 100vh;
+    margin-bottom: 20vh;
+    cursor: pointer;
+}
+.Explore h1{
+    color: #181725;
+    font-size: clamp(1.8em,3vw,2.5em);
+    font-weight: 600;
+    
+}
+.exploreParent{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    gap: 20px;
+  
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+}
+.exploreParent .exploreChild{
+   
+    border-radius: 15px;
+    height: 200px;
+    padding: 8% 2%;
+}
+.exploreParent .exploreChild img{
+    object-fit: contain;
+   height: 45%;
+}
+.exploreParent .exploreChild h5{
+    font-size: 1.2em;
+    color: #181725;
+    margin-top: 10%;
+}
+@media (max-width:800px) {
+    .exploreParent{
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+@media (max-width:600px) {
+    .exploreParent{
+        grid-template-columns: repeat(1, 250px);
+    }
+}

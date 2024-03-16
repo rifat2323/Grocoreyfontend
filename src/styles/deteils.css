@@ -1,0 +1,139 @@
+.productDtetilsParent{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 2%;
+   margin-bottom: 20vh;
+}
+.productDetelisParensK{
+    display: grid;
+    grid-template-columns: 40% 60%;
+  
+
+}
+.imgsParents{
+    width: 450px;
+    
+    height: 300px;
+    position: relative;
+}
+.productDetelisParensK .imgsDiv{
+ width: inherit;
+ height: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  overflow-x: scroll;
+  gap: 10px;
+  scrollbar-width: none;
+  
+}
+.productDetelisParensK .imgsDiv img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.productDetelisParensK .imgsParents  svg{
+ position: absolute;
+ top: 50%;
+ cursor: pointer;
+ background: #44444418;
+ z-index: 5;
+ 
+
+}
+.productDetelisParensK .imgsParents  .leftArrow{
+    left: 0;
+}
+.productDetelisParensK .imgsParents .rightArrow{
+    right: 0;
+}
+.productInfoDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.productName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+.productName h1{
+    font-size: 2.7em;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #181725;
+}
+.productName p{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #181725;
+}
+.productextraDetalis{
+    width: 100%;
+    border: 1px solid #b8b0b0;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0;
+    transition: 150ms linear;
+    
+}
+.productextraDetalis .toggleDetalis{
+    display: flex;
+    justify-content: space-between;
+    background: #e4dcdc;
+    padding: 8px 0;
+    cursor: pointer;
+    transition: 100ms;
+}
+.productextraDetalis .toggleDetalis:hover{
+    background:#beb3b3d8 ;
+}
+.productextraDetalis .toggleDetalis h5{
+    text-transform: capitalize;
+    font-size: 1em;
+    color: #181725;
+  
+}
+.productextraDetalis p{
+    font-weight: 400;
+    font-size: 1em;
+   text-transform: capitalize;
+   line-height: 1.1 ;
+   text-align: left;
+   transition: 150ms linear;
+   
+   
+}
+.reviw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.reviw p{
+    font-weight: 400;
+    font-size: 1.5em;
+}
+@media (max-width: 1170px) {
+    .productDetelisParensK{
+        grid-template-columns: 50% 50%;
+    }
+}
+@media (max-width:958px) {
+    .productDetelisParensK{
+        grid-template-columns: 100%;
+       
+    }
+    .imgsParents{
+        width: 100%;
+    }
+}
